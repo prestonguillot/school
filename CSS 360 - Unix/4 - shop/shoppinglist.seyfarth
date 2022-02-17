@@ -1,0 +1,53 @@
+#!/bin/bash
+
+function die()
+{
+    echo "$*"
+    exit 1
+}
+
+function process_command_line()
+{
+    [ $# -lt 1 -o $# -gt 2 ] && die "Usage: $0 shopping_list_file [price_file]"
+
+    list=$1
+    prices=${2:-prices}
+
+    test -r $list || die "could not read $list"
+    test -r $prices || die "could not read $prices"
+}
+
+function money()
+{
+    local pennies dollars amount
+
+    amount=$1
+    pennies=$((amount%100))
+    dollars=$((amount/100))
+    printf "%d.%02d\n" $dollars $pennies
+}
+
+function shop()
+{
+    total=0
+    dashes="--------------------------------------------------------"
+    printf "%56.56s %7.7s %3.3s %7.7s\n" $dashes $dashes $dashes $dashes
+    while read item count
+    do
+        oldifs="$IFS"
+        IFS=:
+        set -- $(grep "^$item:" $prices)
+        IFS="$oldifs"
+        description="$3"
+        cost=$4
+        amount=$((cost*count))
+        total=$((total+amount))
+        printf "%-56s %7s %3d %7s\n" "$description" $(money $cost) \
+                $count $(money $amount)
+    done < $list
+    printf "%56.56s %7.7s %3.3s %7.7s\n" $dashes $dashes $dashes $dashes
+    printf "%-56s %7s %3s %7s\n" "Total" ""  "" $(money $total)
+}
+
+process_command_line "$@"
+shop

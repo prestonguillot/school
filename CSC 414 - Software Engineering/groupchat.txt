@@ -1,0 +1,289 @@
+------------------------------------------------
+Start of Chabli-_.NTlqWdMVs0N6VYZ7RwLg-- buffer: Wed Feb 15 19:52:15 2006
+[06:28:46 PM] Preston: so are you gonna use the voice stuff?
+[06:28:52 PM] Preston: because i don't know if it works for me
+[06:28:58 PM] *** Monique has joined the chat.
+[06:29:25 PM] Chabli: maybe in a little bit
+[06:29:57 PM] Chabli: dexter might not be able to get on. he is at work... he said he would try
+[06:31:02 PM] Preston: alright
+[06:31:18 PM] Monique: ok
+[06:31:32 PM] Preston: brett is trying to download stuff right now
+[06:32:27 PM] Chabli: he said it will be about 5 min for him
+[06:32:47 PM] Chabli: so what did you guys think of the requirements
+[06:33:28 PM] Preston: there are some issues
+[06:33:43 PM] Chabli: such as
+[06:34:00 PM] Preston: the main problem is that the language is inconsistent
+[06:34:09 PM] Chabli: ok
+[06:34:11 PM] Preston: we talk a lot about different types of users
+[06:34:21 PM] Preston: but never define who the users are, and don't have consistent names for them
+[06:34:26 PM] Preston: which makes it hard to read
+[06:34:44 PM] Preston: also, we call "the system" by a bunch of different names
+[06:35:28 PM] Preston: like, i just kept saying "the system" and someone put "emergency control system"
+[06:35:42 PM] Preston: personally i like emergency control system better, because it's an actual name
+[06:35:52 PM] Preston: but we need to call it something, and keep calling it that in the document
+[06:35:59 PM] Chabli: That was bretts idea 
+[06:36:05 PM] Chabli: i think it should stay also
+[06:36:09 PM] Preston: i figure we should define the type of users in the introduction
+[06:36:12 PM] Chabli: it sounds good and is to the point
+[06:36:16 PM] Preston: so it will make the rest of the document easy to read
+[06:36:49 PM] Preston: hold on
+[06:36:56 PM] Preston: brett is trying to connect and stuff
+[06:39:18 PM] *** Brett has joined the chat.
+[06:39:50 PM] Chabli:  
+[06:40:01 PM] Brett: hey man
+[06:40:10 PM] Preston: alright
+[06:40:12 PM] Chabli: :) hi
+[06:40:21 PM] Brett: this is different than AIM
+[06:40:36 PM] Chabli: is different better
+[06:41:56 PM] Preston: hmm, he disconnected apparently
+[06:41:59 PM] Preston: this is going well
+[06:42:11 PM] Monique: yes
+[06:42:22 PM] Brett: HELLO!!!
+[06:42:27 PM] Preston: there
+[06:42:32 PM] Monique: what is wrong
+[06:42:39 PM] Preston: stop sucking brett, newb
+[06:43:01 PM] Brett: hello
+[06:43:03 PM] Brett: okay
+[06:43:05 PM] Chabli: how do you want to define the users
+[06:43:07 PM] Brett: wow, i do suck
+[06:43:13 PM] Brett: I cant see where i am typing, but it works
+[06:44:06 PM] Preston: good enough
+[06:44:16 PM] Brett: okay, where are we at?
+[06:44:26 PM] Preston: as i was saying, we need to define who the users are going to be in the introduction
+[06:44:27 PM] Chabli: were talking about how we will define the users
+[06:44:30 PM] Monique: i believe that within the introduction we should include who all will be able to use the product how they will be using it
+[06:44:37 PM] Preston: and refer to them with consistent language
+[06:47:50 PM] Preston: and uh
+[06:47:52 PM] Preston: i can keep going
+[06:48:02 PM] Chabli: only certian local officals should be able to access the system
+[06:48:04 PM] Brett: sorry, i had to put something in the microwave
+[06:48:31 PM] Brett: are we going to assume that there arte "techs" in each location monitoring the software
+[06:48:40 PM] Chabli: yes
+[06:48:48 PM] Preston: oh
+[06:48:53 PM] Brett: well what should we call the techs.,...is that your question bob
+[06:48:56 PM] Preston: in section 3.2.1
+[06:49:03 PM] Preston: i gave everyone names
+[06:49:05 PM] Preston: we can just use those
+[06:49:42 PM] Preston: i mean the different entities that are going to use the system, like what do we call the federal people, and the local people, and stuff like that
+[06:49:52 PM] Preston: because it's different throughout the document, and that makes it hard to follow
+[06:50:00 PM] Preston: we can worry about login information and stuff like that later
+[06:50:15 PM] Chabli: ok. what names did you come up with
+[06:50:15 PM] Brett: what about we call them users...
+[06:50:21 PM] Brett: local users?
+[06:50:27 PM] Brett: federal users
+[06:50:52 PM] Preston: whatever, as long as it's the same throughout
+[06:51:14 PM] Chabli: i thought you wanted to give them more technical names
+[06:51:33 PM] Brett: me?....
+[06:51:40 PM] Chabli: no, bob
+[06:52:07 PM] Preston: i just want to give them a standard name, so that it's easy to tell who we're talking about
+[06:52:20 PM] Monique: shouldn't which local and federal user that are allowed to use the ECS be defined in 2.3 
+[06:53:00 PM] Preston: by calling them local and federal users it's implied that they're allowed to use the system
+[06:53:02 PM] Brett: ...i think that just giving a title should be ebough
+[06:53:06 PM] Preston: otherwise i don't think they'd be a user
+[06:53:10 PM] Brett: exa cly
+[06:53:17 PM] Brett: *exactly
+[06:54:32 PM] Brett:  heres a comment, i think in 1.1 instead of ease we should just come out and say simplify...ease sounds like we are trying to relax communications
+[06:55:04 PM] Preston: he's right
+[06:55:09 PM] Preston: i think we need to give more background too
+[06:55:28 PM] Preston: you know, explain why we're trying to build a system and all that
+[06:55:50 PM] Preston: if for nothing else than to take up space and make it look more impressive
+[06:56:00 PM] Chabli: that should go int he context of product section
+[06:56:05 PM] Chabli: 2.1
+[06:56:26 PM] Brett: where exactly is that seciton?
+[06:56:51 PM] Chabli: 2.1 is the section
+[06:57:33 PM] Chabli: the change to 1.1 has been made
+[06:57:43 PM] Preston: i've got a couple of more things
+[06:57:48 PM] Chabli: keep them comming
+[06:58:14 PM] Preston: in 3.1.1 the user interface just says "simple graphical user interface"
+[06:58:19 PM] Preston: i think it should be more explanatory
+[06:58:44 PM] Brett: what more do you think we could say about it at this point?
+[06:58:45 PM] Preston: because designing things around the word "simple" is kind of hard
+[06:59:05 PM] Preston: minimal clutter? text only? less than x number of options per page?
+[06:59:07 PM] Preston: stuff like that
+[06:59:25 PM] Brett: ahhh, i understand,
+[06:59:40 PM] Brett: that is a good point, and makes more clear
+[06:59:45 PM] Preston: also
+[07:00:24 PM] Preston: in 3.1.2 it should be stated better that the client is web based, and we should mention that an internet connection is required in 3.1.3
+[07:00:46 PM] Preston: since just saying TCP/IP and web doesn't make that entirely clear
+[07:01:50 PM] Chabli: ok
+[07:02:03 PM] Preston: for 3.1.2 something like "Users will interact with ECS through a web browser with an Internet connection."
+[07:02:05 PM] Brett: remind me that i have one after we discuss this one
+[07:02:12 PM] Preston: it just sounds better
+[07:03:15 PM] Chabli: im making changes now. just keep comming with the ideas
+[07:03:25 PM] Preston: go ahead brett
+[07:04:12 PM] Brett: section 2.3,....I dont knwo if we need to keep the "user must comprehend english" part...not that it is not valid, but I think that is implied by our requirement document, and also areas for which we are implementing the system
+[07:05:03 PM] Chabli: so do you just want to leave it out or do you have another option for it
+[07:05:25 PM] Preston: another thing is 2.3
+[07:05:33 PM] Brett: i'm thinkin just leave it out, anyone have a better argument for it?
+[07:05:43 PM] Preston: it says something about having proper credentials, but we don't' talk about that anywhere else, or say what the credentials are
+[07:05:59 PM] Preston: i mean, if it's talking about having a login/password system we should say that explicitly
+[07:06:28 PM] Monique:  i think it should be left out 
+[07:06:34 PM] Chabli: gone
+[07:06:45 PM] Chabli: in what section should it be mentioned
+[07:08:05 PM] Brett: oh poot, i dont know
+[07:08:42 PM] Chabli: ok
+[07:09:01 PM] Brett: we may need to decide now if we are going to implement a login/password screen?
+[07:09:05 PM] Preston: well
+[07:09:08 PM] Preston: that's kind of mandatory
+[07:09:12 PM] Chabli: we have to 
+[07:09:23 PM] Preston: since not everyone is supposed to just be able to browse to the place and do things with it
+[07:09:24 PM] Brett: well, then we should defineintly mention it in our document...
+[07:09:34 PM] Brett: that is right, is it mentioned...?
+[07:09:40 PM] Preston: yeah, and no
+[07:11:10 PM] Brett: well does anyone have a suggestion as to what section it should go in
+[07:11:39 PM] Preston: you're the group leader man, lead
+[07:12:03 PM] Chabli: im in the process of changing the document
+[07:12:09 PM] Monique: shouldn't it be in the section 2 when we are describing the product 
+[07:12:16 PM] Chabli: i only look at screen when here ding
+[07:12:22 PM] Chabli: hear
+[07:12:26 PM] Chabli: caveman
+[07:12:46 PM] Preston: my other problems with the document are this
+[07:12:50 PM] Preston: in 3.3
+[07:12:56 PM] Brett: yeah i think section 2...but where in section 2, i should have specified. sorry
+[07:13:17 PM] Chabli: ok i will find a place for it
+[07:13:20 PM] Preston: the 5 minute time is just uh, wrong, it's not like we're bringing people to the hospital on an ambulance
+[07:13:26 PM] Monique: product function
+[07:13:49 PM] Monique: that is the first step to using the product
+[07:13:50 PM] Preston: i was thinking more like, 12 hours or so for people to respond to requests
+[07:14:16 PM] Chabli: people are dead by then
+[07:14:20 PM] Chabli: that was a joke
+[07:14:27 PM] Chabli: ik
+[07:14:31 PM] Chabli: i got ya
+[07:14:35 PM] Preston: and lastly
+[07:14:39 PM] Preston: in 3.4
+[07:14:51 PM] Preston: that sentence doesn't really make sense
+[07:15:01 PM] Chabli: your right
+[07:15:08 PM] Chabli: i will clarify
+[07:15:10 PM] Preston: we should just say that it'll conform to html standards
+[07:15:19 PM] Preston: which implies cross browswer compatibility
+[07:15:19 PM] Brett: couldnt we just say we want it to be multiplatform?
+[07:15:29 PM] Preston: and cross platform compatibility too
+[07:15:52 PM] Preston: maybe not just html standards, since we might have to use other stuff...but something like "common web standards"
+[07:16:11 PM] Preston: remember that whole bit in class about keeping things open as long as possible
+[07:16:26 PM] Chabli: ok
+[07:16:36 PM] Brett: yeah....we might want to slow down a sec..
+[07:16:45 PM] Brett: we have left some topics of discussion behind
+[07:17:06 PM] Chabli: such as
+[07:17:12 PM] Brett: 1 - where are we putting the login/password
+[07:17:32 PM] Brett: chabli, have you made changes to 3.3?
+[07:17:32 PM] Chabli: ill find a place in section 2
+[07:17:46 PM] Chabli: yes i made a time change
+[07:17:50 PM] Preston: i would say we should put something about users having to have a proper login/password in 2.3
+[07:18:08 PM] Preston: and then put something checking login/passwords at the beginning of 3.2.1
+[07:18:20 PM] Preston: something about*
+[07:18:47 PM] Brett: I concurr with 2.3 and 3.2.1
+[07:19:02 PM] Chabli: got it
+[07:19:48 PM] Chabli: we need to figure out who is doing what for the presentation
+[07:20:04 PM] Preston: considering one of us isn't here that's going to be good
+[07:20:15 PM] Brett: that will be easy
+[07:20:26 PM] Chabli: i will inform him later tonite
+[07:20:35 PM] Brett: we can divide it up 5 ways...and we can assign dexter a part
+[07:20:47 PM] Preston: ok
+[07:20:57 PM] Preston: the bulk of the stuff is in the high level requirements
+[07:21:06 PM] Brett: chabli, did you add the part about context of product?
+[07:21:31 PM] Chabli: im working on that. it will be backgroud about why we are creating this product
+[07:22:08 PM] Brett: well i would feel comfortable doing part of the High level requirements...
+[07:22:13 PM] Preston: for the presentation i see an introduction to why we're doing this, and then the high level requirements stuff talking about what the system will do and how it will work
+[07:22:28 PM] Preston: but i don't really know how we're going to break it up five ways
+[07:22:44 PM] Brett: ..yeah, we don't need to apply all of our requirements document....that would be a little much and not as creative
+[07:23:05 PM] Preston: maybe something like
+[07:23:32 PM] Preston: introduction to the problem - then a real high level thing of what we're gonna do, like "improving communications" - then the system we intend to build
+[07:23:54 PM] Preston: um
+[07:24:10 PM] Preston: before the system we intend to build part someone could introduce who will be using the system and describe them and stuff
+[07:24:27 PM] Preston: i'm struggling here
+[07:24:35 PM] Brett: me too, give a sec
+[07:24:57 PM] Preston: maybe we could introduce each user and then how they will interact with the system
+[07:25:10 PM] Preston: in a separate little part
+[07:25:41 PM] Preston: or how it will affect all the users, and the common people
+[07:25:46 PM] Preston: since it's basically a product pitch
+[07:26:19 PM] Brett: we could stress the interface being user friendly, etc.. in that part of the presentation...
+[07:27:01 PM] Preston: we could include a section about design choices for something like that
+[07:27:13 PM] Brett: i mean i agree with what you are saying, i am trying to build off of it
+[07:27:17 PM] Preston: like "here's what we're going to do technically with the system, and why you should give us money"
+[07:27:41 PM] Preston: after we do all the suers and stuff, it'd be more of a concrete kind of thing to go along with the high level crap
+[07:28:02 PM] Brett: ...so one part of the presentation that someone could pretty much sell the application
+[07:28:16 PM] Brett: say, why, and how it is an improvement...
+[07:28:18 PM] Preston: well, isn't that the idea of the whole thing?
+[07:28:35 PM] Brett: then someone else to enter into the high lefvel requirements which could follow the requirements document
+[07:28:49 PM] Preston: the high level stuff would follow along with the users stuff
+[07:28:54 PM] Preston: i mean
+[07:29:05 PM] Brett: it is, but i am saying dedicate one part maybe to comparing it to previous abilities
+[07:29:19 PM] Preston: when you're describing the "government agencies" you describe how they use the system, and how it simplifies stuff for them
+[07:29:37 PM] Preston: and then do the state level people, then maybe lump the newspaper and local distributors together
+[07:29:56 PM] Preston: then give a final brief technical bit talkinga bout technologies we'll use
+[07:30:43 PM] Brett: look, i agree with this stuff, it sucks IMing about it, cause personally I am having trouble coming up with any ideas...i mean I am attempting input...is anyone taking these ideas down?
+[07:31:06 PM] Chabli: im writing them all
+[07:31:15 PM] Chabli: and comming up with an ordr
+[07:31:18 PM] Chabli: order
+[07:32:29 PM] Brett: Right now I am agreeing with this, but Chabli, maybe when u get this down you could email it to us a text document just with the main points of what our presentaiton is going to be
+[07:32:46 PM] Preston: yeah
+[07:32:53 PM] Preston: we kind of need to come up with stuff like, tomorrow
+[07:33:02 PM] Preston: and we don't' really have time before class
+[07:33:03 PM] Monique: my suggestion is first explain the problem and what needs to be fixed, tell how we can help which is telling what our product is and does and how it works then we can break it down as to show how our product benefits everyone involve
+[07:33:21 PM] Brett: iu think if we can all look at the idea, and take a few minutes, we could build off of prestons idea, maybe make some additions
+[07:34:12 PM] Brett: ...well that sounded pretty good, it was all together, and I am grasping it, I think that is similar to prestons right?.....
+[07:34:37 PM] Chabli: yeah, and to the point
+[07:35:18 PM] Chabli: is there any thing in particular that some one wants to talk about?
+[07:35:42 PM] Monique: it doesn't matter to me
+[07:35:48 PM] Preston: hey
+[07:35:52 PM] Preston: brett dropped from the chat
+[07:35:56 PM] Preston: try to invite him back chabli
+[07:36:02 PM] *** Chabli declines a chat invitation to Chabli-_.NTlqWdMVs0N6VYZ7RwLg-- - No, thank you..
+[07:36:02 PM] *** Chabli has left the chat.
+[07:36:19 PM] *** Chabli has joined the chat.
+[07:36:31 PM] Chabli: whats going on with the room
+[07:36:40 PM] Preston: you invited yourself
+[07:36:42 PM] Preston: not brett
+[07:36:43 PM] Preston: and uh
+[07:36:46 PM] Preston: declined your own invitation
+[07:36:54 PM] Chabli: brett is in the room
+[07:37:03 PM] Preston: he can't see anything for some reason
+[07:37:14 PM] Chabli: i just re invited him
+[07:38:04 PM] Brett: i am here
+[07:38:07 PM] Brett: i found where it was
+[07:38:55 PM] Brett: okay..,..i dont knwo what anyone wants to talk about, but chabli you can make some suggestions as to what direction we should go in
+[07:39:25 PM] Brett: how many sections have added to the presentation
+[07:39:43 PM] Brett: could u tell us, and that way, we will know what we can choose from
+[07:41:20 PM] Chabli: im comming hold on
+[07:41:54 PM] Brett: well guys, i cant stay on much longer
+[07:41:59 PM] Preston: yeah
+[07:42:05 PM] Preston: i kinda have to go soon
+[07:42:06 PM] Chabli: hold on just a sec
+[07:42:53 PM] Brett: ive got to eat and i have other obligations before work at 9..so I would like to get something out there in the next couple minutes that we can maybe prepare or look over before class otmorrow
+[07:44:08 PM] Chabli: intro(explain product and why), users(who, why, how), constaints and assumption, requirments, how product will preform why will be good and conclusion
+[07:44:45 PM] Chabli: conclusion goes with last part
+[07:44:49 PM] Brett: alright well thats six, so we can take the two smallest sections and give one person
+[07:46:00 PM] Chabli: so who wants what, and we will give dex whatever is left ove
+[07:46:02 PM] Chabli: over
+[07:46:04 PM] Brett: alright, well someone want to lead it off with a bid
+[07:46:12 PM] Preston: hold on
+[07:46:16 PM] Preston: er
+[07:46:17 PM] Preston: whatever
+[07:46:40 PM] Brett: i will do constraints and assumption i guiess
+[07:46:50 PM] Brett: its a big section, but i will atleast look over it for tonight
+[07:47:00 PM] Preston: i'll do the users
+[07:47:16 PM] Brett: okay, let me rephrase...
+[07:47:43 PM] Monique: how product will perform and why will be good and conclusion
+[07:47:52 PM] Brett: i will take assumptions and look over constraints,...not quite sure if that is actaully a fair pick
+[07:48:18 PM] Chabli: tell me what you think after you have looked it over
+[07:48:46 PM] Chabli: i have the intro since dexter hasnt been here enough to actually explain it
+[07:48:46 PM] Brett: aight, will do...i am out for now if everyone is alright at this point
+[07:49:18 PM] Preston: later
+[07:49:23 PM] Chabli: see ya
+[07:49:27 PM] Brett: well i am going to look over this section, i mean we need to put everyone where there stronig points are, and not just pick an easier serction'
+[07:49:28 PM] Brett: later
+[07:49:36 PM] Brett: anyway, i am out as well, later
+[07:49:46 PM] *** Brett has left the chat.
+[07:49:58 PM] Preston: i'll try to have some stuff done for class tomorrow
+[07:50:05 PM] Chabli: got ya
+[07:50:11 PM] Preston: so we can at least talk about it as a group once before we actually have to do it
+[07:50:17 PM] Chabli: ok
+[07:50:18 PM] Preston: hey
+[07:50:28 PM] Preston: send me a copy of the document once you get it finalized and stuff
+[07:50:50 PM] Chabli: ok
+[07:51:49 PM] Monique: so is what i picked ok or do you need me to do something else
+[07:51:59 PM] Preston: i'm out
+[07:52:03 PM] Preston: see you all tomorrow
+[07:52:04 PM] Chabli: its ok
+[07:52:12 PM] Chabli: see you later bobbbbb
+End of Chabli-_.NTlqWdMVs0N6VYZ7RwLg-- buffer: Wed Feb 15 19:52:15 2006

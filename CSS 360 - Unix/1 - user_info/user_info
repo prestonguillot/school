@@ -1,0 +1,10 @@
+#!/bin/sh
+#Preston Guillot
+#CSS 360
+#9/13/04
+
+finger -m $1
+echo
+w $1
+echo
+last -10 $1

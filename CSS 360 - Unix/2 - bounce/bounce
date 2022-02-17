@@ -1,0 +1,49 @@
+#!/bin/sh
+#Preston Guillot
+
+tput clear
+
+if [ $1 ] 				#check for parameter
+then
+	num=$1 				#if parameter present, record in num
+else
+	num=`tput lines`		#else use number of terminal lines
+fi
+
+col=0					#place holder for columns
+num=$((num-1))				#adjust num since first row is zero
+rowcount=0				#variable to store row high point
+coltot=`tput cols`			#variable to store column bound for error checking
+
+while [ $num -ge 0 ] 			#begin outer loop
+do
+	row=$num			#place holder for rows
+	
+	while [ $row -ge $rowcount ] &&  [ $col -lt $coltot ]	#inner loop for ascending, go until row reaches high point
+	do				
+		tput cup $row $col	#adjust cursor position
+		echo '*'		#display 'ball'
+		sleep 0.1		#monitor is tired at this point
+		col=$((col+1))		#move column position to the right
+		row=$((row-1))		#move row position up
+	done				#back to ascending loop
+	
+	row=$((row+2))			#row now is -1, should be 0 not sure why it isn't, adjust either way
+	col=$((col+1))			#move column to the right
+	num=$((num-1))			#decrease number of ascending steps for next time
+	
+	while [ $row -lt $num ] && [ $col -lt $coltot ]		#inner loop for descending, go until row reaches one less than it ascended from
+	do
+		tput cup $row $col	#adjust cursor position
+		echo '*'		#display 'ball'
+		sleep 0.1		#monitor likes naps
+		col=$((col+1))		#move column position to the right
+		row=$((row+1))		#move row position down
+	done				#back to descending loop
+	
+	rowcount=$((rowcount+1))	#move the high point for next 'bounce' down
+done                    		#back to outer loop
+
+sleep 3					#the monitor is lazy
+tput cup $1 0				#move cursor to usable position
+#all finished, yay!

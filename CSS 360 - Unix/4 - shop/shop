@@ -1,0 +1,58 @@
+#!/bin/bash
+#Preston Guillot
+
+function testparameters() {
+
+	if [ $# -lt 1 ] || [ $# -gt 2 ]
+	then
+		echo "Usage: shop shopping_list_file [price_file]"
+		exit 1
+	else
+		list=$1
+		prices=${2:-prices}
+	fi
+
+}
+
+function printmoney() {
+	
+	local total dollars cents
+
+	total=$1
+	cents=$(($total%100))
+	dollars=$((total/100))
+	printf "%d.%02d\n" $dollars $cents
+#	echo -n $dollars'.'$cents
+
+}
+
+function makereport() {
+	
+	total=0
+	printf "%39s\n\n" "Grocery List"
+	printf "%-56s %-5s %-6s %-6s\n" "Item" "Count" " Each" "Amount"
+	echo "-------------------------------------------------------- ----- ------ ------"
+	
+	while read item number
+	do
+	
+		old_IFS="$IFS"
+		IFS=:
+		set -- $(grep "^$item:" $prices)
+		IFS="$old_IFS"
+		description="$3"
+		price=$4
+		amount=$((price*number))
+		total=$((total+amount))
+		printf "%-56s %3d %7s %7s\n" "$description" $number $(printmoney $price) $(printmoney $amount)
+	
+	done < $list
+	
+	echo "--------------------------------------------------------------------  ------"	
+	echo "Total:                                                               " $(printmoney $total)
+
+}
+
+testparameters "$@"
+makereport
+exit 0

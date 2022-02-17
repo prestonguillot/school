@@ -1,0 +1,37 @@
+#!/bin/bash
+#Preston Guillot
+
+#points to dictinary file
+dictionary=/usr/share/dict/words
+#get the length of parameter
+length=${#1};
+
+#return one character of the word at a time
+#pipe result through sort and store sorted parameter
+#in a varaible
+sortedword=$(for (( i = 0; i < length; i++ ))
+	     do
+		echo  ${1:$i:1}
+	     done | sort  )
+
+#continue reading from $dictionary until EOF is readched
+while read word
+do
+	#if the current dictionary word lengh is equal to the parameter
+	#word length, sort the dictionary word and compare the sorted
+	#results to the sorted paramenter, if the strings are equal
+	#the word is an anagram of the input paramenter, print it
+
+	if (( ${#word} == $length ))
+	then
+		sortedresult=$(for (( i = 0; i < ${#word}; i++ ))
+			       do
+				   echo ${word:$i:1}
+			       done | sort )
+
+		if [ "$sortedresult" == "$sortedword" ]
+		then
+			echo $word
+		fi	
+	fi
+done < $dictionary 

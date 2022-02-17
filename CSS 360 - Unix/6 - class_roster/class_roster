@@ -1,0 +1,36 @@
+#!bin/bash
+
+function roster() {
+	awk -v reg$1'
+		
+		$1 == reg {
+			print $0;
+			getline;
+			while(substring($0,1,1) == " ") {
+				print $0;
+				getline;
+			}
+		print "";
+		exit(0);
+		}
+
+	' $schedule
+	awk -v reg$1 -v students$students regs$regs '
+		FILENAME == students {
+			student($1) = $0;
+		}
+		FILENAME == regs {
+			if ($1 == reg) print student[$2];
+		}
+	' $students $regs
+
+}
+
+schedule=filepath
+students=filepath
+regs=filepath
+
+for reg
+do
+	roster $reg
+done

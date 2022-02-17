@@ -1,0 +1,51 @@
+#!/bin/bash
+
+function die()
+{
+    echo "$*"
+    exit 1
+}
+
+function process_command_line()
+{
+    [ $# -lt 1 -o $# -gt 2 ] && \
+        die "Usage: $0 shopping_list_file [price_file] [category_file]"
+
+    list=$1
+    prices=${2:-prices}
+    categories=${2:-categories}
+
+    test -r $list || die "could not read $list"
+    test -r $prices || die "could not read $prices"
+    test -r $categories || die "could not read $categories"
+}
+
+process_command_line "$@"
+
+awk -F: -v list=$list -v prices=$prices -v categories=$categories '
+    BEGIN {
+        dashes="--------------------------------------------------------";
+        printf "%56.56s %7.7s %3.3s %7.7s\n", dashes, dashes, dashes, dashes
+    }
+    FILENAME == prices {
+        cat[$1] = $2;
+        desc[$1] = $3;
+        price[$1] = $4/100;
+    }
+    FILENAME == categories {
+        cat_desc[$2] = $1;
+    }
+    FILENAME == list {
+        split ( $1, a, " " );
+        item = a[1];
+        count = a[2];
+        cost = price[item] * count;
+        cat_total[cat[item]] += cost;
+        printf "%-56s %7s %3d %7s\n", desc[item], price[item], count, cost;
+    }
+    END {
+        for ( c in cat_total ) {
+            print cat_desc[c], cat_total[c];
+        }
+    }
+' $prices $categories $list

@@ -1,0 +1,43 @@
+#!/bin/sh
+#Preston Guillot
+
+function testparameters() {
+	
+	if [ $# -ne 3 ]
+	then
+		echo "Usage: $0 hostname directory pattern"
+		exit 1
+	else
+		host=$1
+		directory=$2
+		pattern="$3"
+		
+	fi
+}
+
+function choose() {
+	echo "q) Quit"
+	
+	select file in `lftp -c "open $host; find $directory" | grep -i "$pattern" | grep -i ".rpm"$`
+	do
+		if [ $file ]
+		then
+			echo "Downloading $file"
+			lftp -c "open $host; get $file"
+		else
+			if [ $REPLY == 'q' ] || [ $REPLY == 'Q' ]
+			then
+				break
+			else
+				echo "Invalid input."
+			fi
+		fi
+	done 	
+}
+
+temp=$PS3
+PS3="Select the number of the file you wish to download: "
+testparameters "$@"
+choose
+PS3=$temp
+exit 0

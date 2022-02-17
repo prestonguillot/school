@@ -1,0 +1,66 @@
+#!/bin/bash
+#Preston Guillot
+
+function examine_files() {
+	local dir file cr spaces
+	
+	dir=$1
+	
+	[[ -d $dir ]] || return
+	for file in $dir/*		
+	do	
+		cr=$(echo "$file" | grep ".txt$")         #does the file end in .txt?
+		[[ $cr ]] && delete_cr "$cr"		  #if so, delete_cr()
+		spaces=$(echo "$file" | grep ' ')	  #does the file name have spaces?
+		[[ $spaces ]] && delete_spaces "$spaces"  #if so, delete_spaces()
+#There's probably a much better way to do all this, but this is all that came to mind.
+	done
+}
+
+function delete_cr() {
+	local file answer temp
+
+	file="$1"
+	echo -n "Remove carriage returns from $file? (y)es (n)o:"
+	read answer
+	case $answer in
+		(y) temp=/tmp/${USER:-unwin}.unwin.$$
+		    tr -d '\r' < "$file" > "$temp"
+		    mv $temp $file
+		    ;;
+		(n) return
+		    ;;
+		(*) echo "Invalid input, no action taken."
+	esac
+}
+	
+function delete_spaces() {
+	local old new answer
+	
+	old="$1"
+	new=$(echo "$old" | tr ' ' '_')
+	
+	echo -n "Rename $old to $new? (y)es (n)o: "
+	read answer
+	case $answer in
+		(y) mv "$old" $new
+		    ;;
+		(n) return
+		    ;;
+		(*) echo "Invalid input, no action taken."
+	esac
+}
+
+if [[ $# -gt 0 ]] 
+then {
+        
+   	for dir
+   	do 
+      		examine_files $dir
+  	done
+}
+else
+	examine_files . 
+fi
+
+exit 0
